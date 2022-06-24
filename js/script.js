@@ -55,9 +55,14 @@ var app= new Vue(
             }else{
                 this.currentActiveElement = this.slides.length - 1;
             }
-        }
+        },
+        setCurrentActiveElement(elementIndex) {
+       // !     l'elemento attivo diventa uguale
+       // !     all'indice della pic di anteprima
+           this.currentActiveElement = elementIndex;
       // ! fine methods  
        }
     }
+  }
 )
 
