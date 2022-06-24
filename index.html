@@ -25,7 +25,7 @@
                 </div>
 
                 <div class="thumbs">
-                    <div class="prev"></div>
+                    <div @click="showPreviousElement" class="prev"></div>
                     <div @click="showNextElement" class="next"></div>
               <!-- con v-for stampo il ciclo di immagini di anteprima        -->
                      <div v-for="(image, index) in slides">

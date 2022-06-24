@@ -40,10 +40,23 @@ var app= new Vue(
                 }
             ],
         },
+    // ! inizio methods    
        methods: {
         showNextElement() {
-            alert('test');
+            if(this.currentActiveElement < this.slides.length - 1){
+                this.currentActiveElement ++;
+            }else{
+                this.currentActiveElement = 0;
+            }
+        },
+        showPreviousElement() {
+            if(this.currentActiveElement > 0) {
+                this.currentActiveElement--;
+            }else{
+                this.currentActiveElement = this.slides.length - 1;
+            }
         }
+      // ! fine methods  
        }
     }
 )
