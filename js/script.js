@@ -12,6 +12,7 @@ var app= new Vue(
         el: '#root',
         data: {
               currentActiveElement: 0,
+              imageIsScaled: false,
               slides: [
                 {
                     image: 'img/01.jpg',
@@ -60,9 +61,17 @@ var app= new Vue(
        // !     l'elemento attivo diventa uguale
        // !     all'indice della pic di anteprima
            this.currentActiveElement = elementIndex;
+        },
+        
+           ScaleImage(){
+          
+            this.imageIsScaled = !this.imageIsScaled;
+           }
+           
+       
       // ! fine methods  
        }
     }
-  }
+  
 )
 
